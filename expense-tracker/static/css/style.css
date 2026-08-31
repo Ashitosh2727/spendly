@@ -686,6 +686,8 @@ a { color: inherit; text-decoration: none; }
 
 @media (max-width: 600px) {
     .nav-links a:not(.nav-cta) { display: none; }
+    /* logout is the only logged-in nav link — must survive the mobile hide rule above */
+    .nav-links a.nav-logout { display: inline-block; }
     .hero { padding: 3rem 1rem 2rem; }
     .hero-actions { flex-direction: column; width: 100%; }
     .hero-actions .btn-primary { width: 100%; text-align: center; }
